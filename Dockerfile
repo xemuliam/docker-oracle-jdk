@@ -39,4 +39,3 @@ RUN        apk add --no-cache --virtual=.build-deps curl unzip && \
            rm -rf /tmp/* \
              ${JAVA_HOME}/jre/lib/security/README.txt && \
            apk del .build-deps
-
