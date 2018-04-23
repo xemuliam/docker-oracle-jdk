@@ -38,4 +38,5 @@ RUN        apk add --no-cache --virtual=.build-deps curl unzip && \
            cd /tmp && unzip -jo -d ${JAVA_HOME}/jre/lib/security jce_policy-${JAVA_VERSION}.zip && \
            rm -rf /tmp/* \
              ${JAVA_HOME}/jre/lib/security/README.txt && \
-           apk del .build-deps
+           apk del .build-deps && \
+           apk add --no-cache bash
