@@ -1,10 +1,10 @@
 FROM       xemuliam/alpine
 MAINTAINER Viacheslav Kalashnikov <xemuliam@gmail.com>
 ARG        JAVA_MIRROR=http://download.oracle.com/otn-pub/java
-ARG        JAVA_FOLDER=0da788060d494f5095bf8624735fa2f1
+ARG        JAVA_FOLDER=512cd62ec5174c3487ac17c61aaa89e8
 ENV        JAVA_VERSION=8 \
-           JAVA_UPDATE=162 \
-           JAVA_BUILD=12 \
+           JAVA_UPDATE=171 \
+           JAVA_BUILD=11 \
            JAVA_HOME=/usr/lib/jvm/default-jvm
 RUN        apk add --no-cache --virtual=.build-deps curl unzip && \
            curl -jkSLH "Cookie: oraclelicense=accept-securebackup-cookie" \
